@@ -1,0 +1,33 @@
+{
+  "name": "dinoloop-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dinoloop starter featuring typescript and express",
+  "homepage": "https://github.com/ParallelTask/dinoloop-starter",
+  "author": "Dinoloop Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ParallelTask/dinoloop-starter.git"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc --p ./tsconfig.json",
+    "start": "npm run build && node dist/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dinoloop": "0.0.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/node": "^7.0.22",
+    "rimraf": "^2.5.2",
+    "typescript": "~2.4.2"
+  },
+  "engines": {
+    "node": ">= 8.10.x",
+    "npm": ">= 5.6.0"
+  }
+}
