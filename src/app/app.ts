@@ -1,5 +1,4 @@
 import express = require('express');
-import cors = require('cors');
 import bodyParser = require('body-parser');
 import { Dino } from 'dinoloop';
 import { HomeController } from './controllers/home.controller';
@@ -7,10 +6,7 @@ import { HomeController } from './controllers/home.controller';
 const app = express();
 
 /************ basic express-setup **************/
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors());
-/**********************************************/
 
 // Dino requires express app instance
 // and the base-uri on which dino app to be mounted
