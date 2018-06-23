@@ -1,5 +1,5 @@
 # dinoloop-starter
-dinoloop starter featuring typescript and express
+[Dinoloop](https://github.com/ParallelTask/dinoloop) starter featuring typescript and express.
 
 ## How to
 git clone the project
