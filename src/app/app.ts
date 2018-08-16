@@ -4,16 +4,17 @@ import { Dino } from 'dinoloop';
 import { HomeController } from './controllers/home.controller';
 
 const app = express();
+const port = process.env.PORT || 8088;
 
 /************ basic express-setup **************/
 app.use(bodyParser.json());
 
 // Dino requires express app instance
 // and the base-uri on which dino app to be mounted
-let dino = new Dino(app, '/api');
+const dino = new Dino(app, '/api');
 
 dino.useRouter(() => express.Router());
 dino.registerController(HomeController);
-
 dino.bind();
-app.listen(8088, () => console.log('Server started on port 8088'));
+
+app.listen(port, () => console.log(`Server started on port ${port}`));
