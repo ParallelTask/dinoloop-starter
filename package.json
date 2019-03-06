@@ -15,15 +15,16 @@
     "start": "npm run build && node dist/app.js"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "dinoloop": "^2.1.0",
-    "express": "^4.16.3"
+    "body-parser": "~1.18.3",
+    "dinoloop": "~2.3.0",
+    "express": "~4.16.3",
+    "source-map-support": "~0.5.10"
   },
   "devDependencies": {
-    "@types/express": "^4.11.1",
-    "@types/node": "^10.0.22",
-    "rimraf": "^2.5.2",
-    "typescript": "~2.4.2"
+    "@types/express": "~4.11.1",
+    "@types/node": "~10.0.0",
+    "rimraf": "~2.5.2",
+    "typescript": "~2.8.1"
   },
   "engines": {
     "node": ">= 8.10.x",
